@@ -2,7 +2,7 @@ import { EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Subject } from 'rxjs';
 import { Subscription } from 'rxjs';
-import { mergeMap } from 'rxjs';
+import {mergeMap} from 'rxjs/internal/operators';
 import { UploadFile, UploadOutput, UploadInput, UploadStatus, BlobFile } from './interfaces';
 
 export function humanizeBytes(bytes: number): string {
